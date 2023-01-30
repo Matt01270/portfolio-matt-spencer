@@ -65,7 +65,7 @@
         display: flex; 
         justify-content: center;
         img { 
-            width: 38vw; 
+            width: 50%; 
             height: auto; 
             margin-bottom: 35px;
         }
@@ -141,6 +141,13 @@
         margin: 0 auto; 
         max-width: 800px;
     } 
+
+    .home { 
+        img { 
+            width: 50%;  
+            border: 3px solid white;
+        }
+    }
     .aboutSection { 
         .aboutText { 
        text-align: center;
@@ -189,11 +196,13 @@
 
 /* TABLETS */
 @media (max-width: 800px) { 
-
     .home { 
+        padding-top: 50px;
         img { 
-            width: 50vw; 
-            height: auto;
+            width: 50%; 
+            height: auto; 
+            border: 2px white solid; 
+            margin: 0;
         }
     }
     .projectSection { 
@@ -211,7 +220,9 @@ ul li .imageTextMobile {
 }
 } 
 
-
+.fa-arrow-down { 
+    display: none;
+}
 
 
 /* CELL PHONES */
@@ -221,11 +232,19 @@ body {
     overflow-x: hidden;
 }
 
+.headerFlex { 
+    h1 { 
+        font-size: 1.1rem; 
+        padding-top: 5px;
+
+    }
+}
 .wrapper { 
     width: 95%;
 }  
 
-.home { 
+.home {  
+    
     .container { 
         display: flex; 
         flex-direction: column-reverse; 
@@ -234,17 +253,23 @@ body {
 
     .homeLinks { 
         margin: 0;
+    } 
+
+    h2 { 
+        font-size: 1.2rem; 
+        font-weight: 400; 
+    } 
+    .webDeveloper { 
+        font-size: 2rem;
     }
 }
 
-.profilePic { 
-    img { 
-        width: 80vw;
-    }
-} 
-
 h1 { 
     padding: 0;
+} 
+
+h2 { 
+    font-size: 1rem;
 }
 .webDeveloper { 
     white-space: normal;
@@ -294,10 +319,16 @@ h1 {
         }
     }
 }
-
-    .footerContainer { 
+footer { 
+     .footerContainer { 
+        flex-direction: column;
         .footerText { 
             text-align: center;
         }
+    } 
+    ul { 
+        display: none;
     }
+}
+   
 }
