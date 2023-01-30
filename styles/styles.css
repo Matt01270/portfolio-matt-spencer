@@ -1255,6 +1255,9 @@ footer li {
 }
 /* CELL PHONES */
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   .wrapper {
     width: 95%;
   }
