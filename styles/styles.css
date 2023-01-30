@@ -1262,11 +1262,10 @@ footer li {
   .imgText1 {
     display: none;
   }
+  .fa-arrow-down {
+    display: none;
+  }
 }
-.fa-arrow-down {
-  display: none;
-}
-
 /* CELL PHONES */
 @media (max-width: 500px) {
   body {
@@ -1304,64 +1303,60 @@ footer li {
   h1 {
     padding: 0;
   }
-}
-.webDeveloper {
-  white-space: normal;
-}
-
-.homeLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-}
-.homeLinks a.buttonBlack {
-  margin-bottom: 25px;
-  margin-right: 0;
-  width: 100%;
-}
-.homeLinks a.contactLink {
-  margin: 0;
-}
-
-.resumeSection .educationContainer,
+  .webDeveloper {
+    white-space: normal;
+  }
+  .homeLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .homeLinks a.buttonBlack {
+    margin-bottom: 25px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .homeLinks a.contactLink {
+    margin: 0;
+  }
+  .resumeSection .educationContainer,
 .resumeSection .workContainer {
-  margin-top: 35px;
-  padding: 0 40px;
-  width: 100%;
-}
-.resumeSection .educationContainer .containerTitle,
+    margin-top: 35px;
+    padding: 0 40px;
+    width: 100%;
+  }
+  .resumeSection .educationContainer .containerTitle,
 .resumeSection .workContainer .containerTitle {
-  text-align: center;
-}
-.resumeSection .educationContainer .containerContent,
+    text-align: center;
+  }
+  .resumeSection .educationContainer .containerContent,
 .resumeSection .workContainer .containerContent {
-  border-left: none;
-  text-align: center;
-  padding: 0;
-}
-
-.contactSection form .buttonBlack {
-  width: 100%;
-  padding: 25px 15px;
-}
-
-footer .footerContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-footer .footerContainer .footerText {
-  text-align: center;
-}
-footer ul {
-  display: none;
+    border-left: none;
+    text-align: center;
+    padding: 0;
+  }
+  .contactSection form .buttonBlack {
+    width: 100%;
+    padding: 25px 15px;
+  }
+  footer .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footerContainer .footerText {
+    text-align: center;
+  }
+  footer ul {
+    display: none;
+  }
 }
