@@ -1,0 +1,244 @@
+@use './variables' as *;
+
+body { 
+    font-family: $title-font;
+}
+h1 { 
+    font-family: $title-font; 
+    font-size: 1.5rem;
+} 
+
+nav a { 
+    text-decoration: none; 
+    font-family: $title-font; 
+    color: black; 
+    text-transform: uppercase; 
+    font-weight: 600; 
+    font-size: 1rem;
+} 
+
+.home { 
+    color: #f7f7f7; 
+
+    h2 { 
+        font-size: 3vw; 
+        font-weight: 200; 
+        text-transform: uppercase;  
+
+        span { 
+            display: block; 
+            font-size: 4vw; 
+            font-weight: 500;
+        } 
+    }  
+
+    h2,
+    p {
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.48);
+        margin: 0;
+        white-space: nowrap;
+    } 
+
+    .homeLinks { 
+        .contactLink:hover { 
+            text-decoration: none;
+        }
+    }
+}
+
+.contactLink {
+    text-transform: capitalize;
+    color: black;
+}
+
+.green { 
+    color: green;
+} 
+
+.aboutSection { 
+    text-align: center; 
+
+   .mattSpencer{ 
+        font-weight: 400; 
+        margin: 0;
+    } 
+
+    span { 
+        font-weight: 600; 
+        border-bottom: 4px solid $primary-color;
+    }
+    .aboutText { 
+        text-align: left; 
+        font-size: 1.3rem; 
+        line-height: 1.8em; 
+
+        .myDetails { 
+            h3 { 
+                color: $secondary-color; 
+                text-transform: capitalize; 
+                font-weight: 500; 
+                font-size: 1rem; 
+                text-align: left;
+            }  
+        }
+    }
+} 
+
+.myDetails .myDetail a {
+    color: black;
+} 
+
+.sectionSummary { 
+    display: inline; 
+    text-align: center;
+    text-transform: capitalize; 
+    background-color: $primary-color; 
+    color: #f7f7f7;
+    padding: 0 10px; 
+} 
+
+.sectionHeading { 
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-top: 1em;  
+}
+
+.skillsContainer { 
+    h3 { 
+        text-transform: capitalize; 
+    }  
+    p { 
+      line-height: 1.6rem;  
+    }
+}
+
+.resumeSection {
+    text-align: center; 
+
+    h3 { 
+        font-size: 1.8rem; 
+        font-weight: 500; 
+        margin-bottom: 0; 
+    }
+
+    h4 { 
+        font-size: 1.5rem; 
+        font-weight: 500; 
+        text-transform: capitalize;
+    } 
+
+    .interested { 
+        font-size: 1.2rem; 
+        margin-top: 35px;
+    }
+} 
+
+.educationContainer, 
+.workContainer { 
+    color: $secondary-color; 
+    text-align: left; 
+    color:black; 
+
+    p{ 
+        line-height: 1.7rem;
+    }
+    span { 
+        color: $secondary-color;
+    }
+}
+
+.projectSection { 
+    text-align: center; 
+    li {
+        .imgText1 {
+            font-size: 1rem;
+        }
+    }
+} 
+
+.faqSection { 
+    p { 
+        line-height: 1.8em; 
+        font-family: 400; 
+        a { 
+            color: $primary-color; 
+            &:hover { 
+                text-decoration: none;
+            }
+        }
+    } 
+
+    button { 
+        font-weight: 500; 
+        font-size: 1.1rem;
+    }
+} 
+
+.revealText { 
+    font-family: $body-font; 
+    color: $secondary-color;
+}
+.contactTextContainer {
+    line-height: 1.8em; 
+    font-size: 1rem; 
+
+    p { 
+        font-weight: 400; 
+        color: white;
+
+        span { 
+            display: block; 
+            font-weight: 600; 
+            text-transform: capitalize;
+        }
+    } 
+} 
+
+.contactFormContainer { 
+    
+    label { 
+        font-weight: 300;
+    }
+
+    input, 
+    textarea { 
+        font-family: $body-font;
+        color: white;
+        font-size: 1.1rem;
+    }
+} 
+
+footer { 
+    h1 {
+        color: white;
+    }
+    
+    a,
+    p {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    a {
+        text-transform: capitalize;
+        font-weight: 300;
+        color: $secondary-color;
+    }
+
+    p {
+        font-size: 0.8rem;
+    } 
+
+    li { 
+        font-size:  0.8rem; 
+        color: $secondary-color;
+    }
+
+} 
+
+.footerContainer p
+a { 
+    color: white; 
+    font-size: 0.6rem;
+}

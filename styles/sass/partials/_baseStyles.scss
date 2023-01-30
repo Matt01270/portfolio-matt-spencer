@@ -1,0 +1,84 @@
+@use './variables' as *;
+html { 
+    scroll-behavior: smooth;
+}
+
+body {  
+    overflow-x: hidden;
+} 
+
+.wrapper {  
+    width: 65%;
+    margin: 0 auto; 
+} 
+
+header { 
+    position: fixed;
+    width: 100%;  
+    background-color: #f7f7f7;  
+    z-index: 10; 
+    box-shadow: 1px 6px 15px -10px rgba(0, 0, 0, 0.616); 
+    
+    nav {
+        display: flex;
+        list-style: none;  
+        li { 
+            margin: 10px; 
+            transition: .2s ease-in; 
+            &:hover { 
+                transform: scale(105%);
+            }
+        } 
+    } 
+}  
+
+.logo { 
+    position: relative;
+}
+
+.buttonBlack { 
+    width: 45%;
+    background-color: #000; 
+    text-decoration: none; 
+    color: #f7f7f7; 
+    padding: 20px 40px; 
+    text-align: center;
+    border: none;  
+    outline: none;  
+    transition: 0.2s ease-in; 
+    text-transform: capitalize; 
+    box-shadow: -1px 2px 25px -3px rgba(0, 0, 0, 0.75);
+    
+    &:hover { 
+        opacity: 0.7; 
+    }
+} 
+
+/* FONT AWESOME COLORS */ 
+
+.fa-html5 { 
+    color: #F16529;
+}
+.fa-sass { 
+    color: #cc6699;
+}  
+
+.fa-square-js { 
+    color: #f0db4f; 
+} 
+
+.fa-react { 
+    color: #61dbfb; 
+}
+
+.skillsSection { 
+    
+    .fa-github { 
+    color: $github;
+    }
+}
+
+
+
+
+
