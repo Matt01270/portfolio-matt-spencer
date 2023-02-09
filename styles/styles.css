@@ -646,7 +646,7 @@ header nav li:hover {
           justify-content: center;
 }
 .home img {
-  height: 30vw;
+  height: 25vw;
   max-height: 600px;
   width: auto;
   border: 18px white solid;
@@ -1125,7 +1125,7 @@ footer li {
             justify-content: center;
   }
   .profilePic img {
-    width: 50%;
+    width: 60%;
     height: auto;
     margin-bottom: 35px;
   }
@@ -1137,13 +1137,6 @@ footer li {
   }
   .home .webDeveloper {
     font-size: 3rem;
-  }
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    max-width: 900px;
   }
   .homeText {
     display: -webkit-box;
@@ -1187,7 +1180,7 @@ footer li {
             flex-direction: column;
   }
   .resumeContainers .educationContainer,
-.resumeContainers .workContainer {
+  .resumeContainers .workContainer {
     width: 100%;
   }
 }
@@ -1199,19 +1192,23 @@ footer li {
     max-width: 800px;
   }
   .home img {
-    width: 50%;
+    width: 75%;
     border: 3px solid white;
   }
   .aboutSection .aboutText {
     text-align: center;
   }
   .skillsSection .row1,
-.skillsSection .row2 {
+  .skillsSection .row2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .container {
+    /*  flex-direction: column-reverse;
+    max-width: 900px; */
+  }
   .container .resumeContainers .educationContainer,
-.container .resumeContainers .workContainer {
+  .container .resumeContainers .workContainer {
     border-left: none;
   }
   .faqContent {
@@ -1234,7 +1231,7 @@ footer li {
             flex-direction: column;
   }
   .contactContent .contactTextContainer,
-.contactContent .contactFormContainer {
+  .contactContent .contactFormContainer {
     width: 100%;
     text-align: center;
   }
@@ -1255,6 +1252,18 @@ footer li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   ul li .imageTextMobile {
     display: block;
@@ -1300,6 +1309,10 @@ footer li {
   .home .webDeveloper {
     font-size: 2rem;
   }
+  .home img {
+    min-width: 300px;
+    height: auto;
+  }
   h1 {
     padding: 0;
   }
@@ -1328,17 +1341,17 @@ footer li {
     margin: 0;
   }
   .resumeSection .educationContainer,
-.resumeSection .workContainer {
+  .resumeSection .workContainer {
     margin-top: 35px;
     padding: 0 40px;
     width: 100%;
   }
   .resumeSection .educationContainer .containerTitle,
-.resumeSection .workContainer .containerTitle {
+  .resumeSection .workContainer .containerTitle {
     text-align: center;
   }
   .resumeSection .educationContainer .containerContent,
-.resumeSection .workContainer .containerContent {
+  .resumeSection .workContainer .containerContent {
     border-left: none;
     text-align: center;
     padding: 0;

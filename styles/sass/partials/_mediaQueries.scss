@@ -65,7 +65,7 @@
         display: flex; 
         justify-content: center;
         img { 
-            width: 50%; 
+            width: 60%; 
             height: auto; 
             margin-bottom: 35px;
         }
@@ -82,11 +82,7 @@
             font-size: 3rem;
         }
     }
-    .container { 
-        flex-direction: column-reverse; 
-        max-width: 900px;
-    } 
-
+  
     .homeText { 
         display: flex; 
         text-align: center;
@@ -144,7 +140,7 @@
 
     .home { 
         img { 
-            width: 50%;  
+            width: 75%;  
             border: 3px solid white;
         }
     }
@@ -158,7 +154,10 @@
     .skillsSection .row2 { 
         flex-wrap: wrap;
     } 
+    
 .container {  
+    /*  flex-direction: column-reverse;
+    max-width: 900px; */
     .resumeContainers { 
         .educationContainer, 
     .workContainer { 
@@ -207,6 +206,12 @@
         ul { 
             flex-direction: column;
         }
+    } 
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
     }
 
 ul li .imageTextMobile { 
@@ -249,7 +254,7 @@ body {
     .container { 
         display: flex; 
         flex-direction: column-reverse; 
-        justify-content: space-between;
+        justify-content: space-between; 
     } 
 
     .homeLinks { 
@@ -262,6 +267,11 @@ body {
     } 
     .webDeveloper { 
         font-size: 2rem;
+    } 
+
+    img { 
+        min-width: 300px; 
+        height: auto;
     }
 }
 
