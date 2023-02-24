@@ -902,6 +902,10 @@ hr {
 }
 
 /* CONTACT SECTION */
+.dNone {
+  display: none;
+}
+
 .contactSection {
   background-color: #456440;
   padding: 100px 0;
