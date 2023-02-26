@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center; 
     align-items: center;
-    z-index: 10;
+    z-index: 50;
 
     h1 { 
         padding: 0 20px; 
@@ -208,8 +208,63 @@
 
 .projectSection { 
     background-color: $white1; 
-    padding: 100px 0;
-} 
+    padding: 100px 0; 
+
+    ul { 
+        list-style: none;
+        padding: 0;
+        display: flex;  
+        justify-content: center;
+        gap: 2em;   
+
+        li { 
+            display: flex;
+            margin: 25px 0; 
+            min-height: 450px; 
+            justify-content: space-evenly; 
+            flex-direction: column; 
+
+            a { 
+                display: inline;
+            }
+        } 
+    } 
+
+    .imgText1 {
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        padding: 0 10px;
+        text-align: center;
+        max-height: 200px; 
+        pointer-events: none;
+
+        h4 p {
+            transition: visibility 0.3s ease-in;
+        } 
+                
+        }
+
+          img {  
+            z-index: 200;
+            &:hover {
+                filter: brightness(40%);
+                transform: scale(1.1);
+            } 
+    }
+   
+    a { 
+        &:hover .imgText1  {
+                visibility: visible;
+            } 
+        } 
+        
+    }
+
 
 ul li .imageTextMobile { 
     display: none;
@@ -223,38 +278,64 @@ ul {
     gap: 2em;
     
     li { 
-        margin: 20px 0; 
+        margin: 20px 0;
         position: relative; 
-        overflow: hidden;
-         &:hover img { 
-            filter: brightness(50%); 
-            transform: scale(1.1);
-        }
+        overflow: hidden;  
 
-        &:hover .imgText1 { 
-            visibility: visible; 
+        .liveLink {
+            background-color: $primary-color;
+            color: $white1;
+            padding: 5px 10px;
+            margin: 10px; 
+            text-decoration: none;  
+            transition: 0.2s ease-in;  
+        
+            width: 20%;
+
+            &:hover { 
+                opacity: 0.7;
+            }
+        } 
+        
+        .repoLink {
+            background-color: $primary-color;
+            color: $white1;
+            padding: 5px 10px;
+            margin: 10px;
+            text-decoration: none; 
+            transition: 0.2s ease-in; 
+            width: 20%;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
         img { 
             width: 100%; 
             height: auto;  
-            transition: transform 0.5s;
+            transition: transform 0.5s; 
+            margin: 0;
         } 
 
-        .imgText1 { 
-            position: absolute; 
-            color: white;
-            top: 0; 
-            bottom: 0; 
-            left: 0; 
-            right: 0; 
-            visibility: hidden; 
-            padding: 0 10px;
+        
 
-            h4 p { 
-                transition: visibility 0.3s ease-in;
-            }
-        }
+        .projectTags p { 
+            text-align: center; 
+            margin: 20px 0; 
+            position: relative;
+            z-index: 10; 
+            line-height: 2rem;
+
+            span {  
+            background-color: $secondary-color; 
+            color: $white1; 
+            margin: 5px; 
+            padding: 0 10px; 
+            margin-top: 40px;
+            border-radius: 1em;  
+        } 
+    }
     }
 }
 

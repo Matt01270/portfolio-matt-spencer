@@ -538,7 +538,7 @@ header nav li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
+  z-index: 50;
 }
 .headerSection h1 {
   padding: 0 20px;
@@ -759,6 +759,63 @@ header nav li:hover {
   background-color: #ffffff;
   padding: 100px 0;
 }
+.projectSection ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+.projectSection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+  min-height: 450px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projectSection ul li a {
+  display: inline;
+}
+.projectSection .imgText1 {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  padding: 0 10px;
+  text-align: center;
+  max-height: 200px;
+  pointer-events: none;
+}
+.projectSection .imgText1 h4 p {
+  -webkit-transition: visibility 0.3s ease-in;
+  transition: visibility 0.3s ease-in;
+}
+.projectSection img {
+  z-index: 200;
+}
+.projectSection img:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.projectSection a:hover .imgText1 {
+  visibility: visible;
+}
 
 ul li .imageTextMobile {
   display: none;
@@ -780,14 +837,31 @@ ul li {
   position: relative;
   overflow: hidden;
 }
-ul li:hover img {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+ul li .liveLink {
+  background-color: #456440;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  width: 20%;
 }
-ul li:hover .imgText1 {
-  visibility: visible;
+ul li .liveLink:hover {
+  opacity: 0.7;
+}
+ul li .repoLink {
+  background-color: #456440;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  width: 20%;
+}
+ul li .repoLink:hover {
+  opacity: 0.7;
 }
 ul li img {
   width: 100%;
@@ -796,20 +870,22 @@ ul li img {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  margin: 0;
 }
-ul li .imgText1 {
-  position: absolute;
-  color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
+ul li .projectTags p {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  z-index: 10;
+  line-height: 2rem;
+}
+ul li .projectTags p span {
+  background-color: #939597;
+  color: #ffffff;
+  margin: 5px;
   padding: 0 10px;
-}
-ul li .imgText1 h4 p {
-  -webkit-transition: visibility 0.3s ease-in;
-  transition: visibility 0.3s ease-in;
+  margin-top: 40px;
+  border-radius: 1em;
 }
 
 /* FAQ SECTION */
@@ -1207,13 +1283,13 @@ footer li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .container {
-    /*  flex-direction: column-reverse;
-    max-width: 900px; */
-  }
   .container .resumeContainers .educationContainer,
   .container .resumeContainers .workContainer {
     border-left: none;
+  }
+  .projectSection ul li .imgText1 {
+    font-size: 0.7rem;
+    padding-top: 10px;
   }
   .faqContent {
     -webkit-box-orient: vertical;
@@ -1256,6 +1332,9 @@ footer li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .projectSection img {
+    margin: 30px 0;
   }
   .container {
     display: -webkit-box;
