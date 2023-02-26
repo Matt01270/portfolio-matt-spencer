@@ -103,7 +103,13 @@
         }
     } 
     } 
-
+        .projectSection ul li {
+            .imgText1 {
+                font-size: 0.7rem;
+                padding-top: 30px;
+            }
+        }
+  
     .resumeSection { 
         h3 { 
             span { 
@@ -166,12 +172,7 @@
     
 } 
 
-.projectSection ul li { 
-    .imgText1 { 
-        font-size: 0.7rem; 
-        padding-top: 10px;
-    }
-}
+
     
 .faqContent { 
     flex-direction: column;  

@@ -451,7 +451,7 @@ body {
 }
 
 .wrapper {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -796,6 +796,7 @@ header nav li:hover {
   bottom: 0;
   visibility: hidden;
   padding: 0 10px;
+  margin-top: 50px;
   text-align: center;
   max-height: 200px;
   pointer-events: none;
@@ -803,6 +804,7 @@ header nav li:hover {
 .projectSection .imgText1 h4 p {
   -webkit-transition: visibility 0.3s ease-in;
   transition: visibility 0.3s ease-in;
+  font-size: 0.7rem;
 }
 .projectSection img {
   z-index: 200;
@@ -874,7 +876,7 @@ ul li img {
 }
 ul li .projectTags p {
   text-align: center;
-  margin: 20px 0;
+  margin: 5px 0;
   position: relative;
   z-index: 10;
   line-height: 2rem;
@@ -1247,6 +1249,10 @@ footer li {
     text-align: center;
     margin: 0;
   }
+  .projectSection ul li .imgText1 {
+    font-size: 0.7rem;
+    padding-top: 30px;
+  }
   .resumeSection h3 span {
     display: block;
     width: 50%;
@@ -1286,10 +1292,6 @@ footer li {
   .container .resumeContainers .educationContainer,
   .container .resumeContainers .workContainer {
     border-left: none;
-  }
-  .projectSection ul li .imgText1 {
-    font-size: 0.7rem;
-    padding-top: 10px;
   }
   .faqContent {
     -webkit-box-orient: vertical;
