@@ -211,7 +211,12 @@
     }
     .projectSection { 
         ul { 
-            flex-direction: column;
+            flex-direction: column; 
+
+            li { 
+                width: 100%; 
+                min-height: 700px;
+            }
         } 
 
         img { 

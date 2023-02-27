@@ -769,13 +769,15 @@ header nav li:hover {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projectSection ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 25px 0;
-  min-height: 450px;
+  min-height: 550px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -783,6 +785,7 @@ header nav li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 40%;
 }
 .projectSection ul li a {
   display: inline;
@@ -812,8 +815,8 @@ header nav li:hover {
 .projectSection img:hover {
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .projectSection a:hover .imgText1 {
   visibility: visible;
@@ -1334,6 +1337,10 @@ footer li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .projectSection ul li {
+    width: 100%;
+    min-height: 700px;
   }
   .projectSection img {
     margin: 30px 0;
